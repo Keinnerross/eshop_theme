@@ -1,6 +1,6 @@
 <?php
 
-function SliderFront()
+function BannerMain()
 {
 
     require_once get_stylesheet_directory() . "/components/frontpage/infoSlider.php";

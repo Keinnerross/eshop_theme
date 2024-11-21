@@ -4,5 +4,8 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   }
 }
