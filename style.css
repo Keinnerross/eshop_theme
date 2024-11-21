@@ -293,3 +293,7 @@ a:focus, input:focus, textarea:focus, button:focus {
 .dgwt-wcas-search-wrapp {
   margin: 0 !important;
 }
+
+div:where(.swal2-container) .swal2-html-container{
+  padding: 0 !important;
+}

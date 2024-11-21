@@ -38,8 +38,8 @@ require_once get_stylesheet_directory() . "/components/header/modalCategoriesMob
         <?php do_action('storefront_before_header'); ?>
 
 
-        <header class="w-screen  hidden md:flex flex-col  justify-center items-center fixed top-0  z-[9999999] shadow-lg bg-myWhite ">
-            <div class="flex items-center  justify-center w-screen py-4 bg-primary text-white">
+        <header class="w-screen  hidden md:flex flex-col  justify-center items-center fixed top-0 shadow-lg bg-myWhite " style="z-index: 1000;">
+            <div class="flex items-center  justify-center w-screen py-2 bg-primary text-white">
                 <div class="w-[95vw] flex justify-between">
                     <p>This is a <span class="font-semibold">DEMO version</span>, the website is under build 🏗️</p>
                     <div class="flex gap-2 items-center">

@@ -16,9 +16,22 @@ function cargar_slick_js() {
     wp_enqueue_script('jquery'); // WordPress ya incluye jQuery por defecto
     wp_enqueue_script('slick-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, false);
 
-
+  
 }
 add_action('wp_enqueue_scripts', 'cargar_slick_js');
+
+//sweet alert
+function enqueue_sweetalert() {
+    // Registrar SweetAlert2 desde un CDN
+    wp_enqueue_script('sweetalert2', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array('jquery'), null, true);
+
+    // Registrar tu archivo de JS personalizado
+    wp_enqueue_script('custom-sweetalert', get_stylesheet_directory_uri() . '/js/alerts.js', array('jquery', 'sweetalert2'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_sweetalert');
+
+
+
 
 
 // Aquí se añade el parentesco de estilos con el tema padre al tema hijo:

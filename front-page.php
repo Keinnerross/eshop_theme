@@ -5,15 +5,15 @@
 <?php require_once get_stylesheet_directory() . '/components/frontpage/featuredProducts.php' ?>
 <?php require_once get_stylesheet_directory() . '/components/frontpage/welcomeMessage.php' ?>
 
-<div id="primary" class="min-h-[80vh] flex justify-center  w-screen " style="margin-top: 90px;">
+<div id="primary" class="min-h-[80vh] flex justify-center  w-screen mt-[90px] ">
 
 	<main class="w-full flex items-center flex-col ">
 		<?php BannerMain() ?>
 		<?php SliderAux() ?>
 		<?php CategoriesFestivities() ?>
 		<div class="pt-8">
-			<h3>Recently added products   <i class="fa fa-arrow-right text-lg" aria-hidden="true"></i></h3>
-		<?php FeaturedProducts() ?>
+			<h3>Recently added products <i class="fa fa-arrow-right text-lg" aria-hidden="true"></i></h3>
+			<?php FeaturedProducts() ?>
 
 		</div>
 		<?php WelcomeMessage() ?>

@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
+    "sweetalert2": "^11.14.5",
     "tailwindcss-animated": "^1.1.2"
   },
   "scripts": {
