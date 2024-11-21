@@ -1,0 +1,40 @@
+.dashboardContainer {
+
+
+}
+
+.dashboardContainer strong{
+    font-size: 22px;
+}
+
+.dashboardSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboardSection span {
+   
+}
+
+.dashboardTitleSecion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dashboardTitleSecion span {
+    font-size: 16px;
+
+}
+
+.addonsSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+
+}

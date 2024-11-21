@@ -1,0 +1,290 @@
+/*
+Theme Name:   Webel_child
+Description:  Tema hijo 
+Author:       keinnerross
+Author URL:   keinnerross.io
+Template:     storefront
+Version:      10.1
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  webel_child
+*/
+
+:root {
+  --primary: #0d6efd;
+  --secondary: #0d6efd;
+  --tertiary: #d5dfff;
+  --darkPrimary: #0d6efd;
+  --lightPrimary: #e5e9f8;
+  --lightSecundary: #b5b7ca;
+  --gray: #727586;
+  --color-text: #333333;
+  --bg: #EDEDED;
+  --bgSecundary: #E5EBF9;
+  --blackText: #11181C;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  color: var(--blackText);
+  font-family: Poppins !important;
+  background-color: var(--bg);
+}
+
+form{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+    /* Oculta el checkbox nativo */
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 17px;
+      height: 17px;
+      border: 2px solid var(--primary);
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+  }
+  
+  /* Estilo del checkbox en estado activo */
+  input[type="checkbox"]:checked {
+      background-color:white;
+  }
+  
+  /* Punto en el centro cuando está activo */
+  input[type="checkbox"]:checked::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  /* Quita el subrayado */
+  color: inherit;
+  /* Hace que el enlace herede el color del elemento padre */
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  /* Quita el subrayado en el estado hover, focus y active */
+  color: inherit;
+  /* Hace que el enlace herede el color del elemento padre en el estado hover, focus y active */
+}
+
+
+p {
+  margin: 0 !important;
+}
+
+.textPrimary {
+  color: var(--primary)
+}
+
+
+.servicesTitleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 0 140px 0;
+}
+
+.servicesTitle {
+  width: 90%;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 800;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.mainSection {
+  width: 75%;
+}
+
+
+ul,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+  /* Elimina subrayado */
+  color: inherit;
+  /* Mantiene el color original */
+  /* Añade cualquier otro estilo que desees eliminar */
+  outline: none;
+  box-shadow: none
+}
+
+
+.orderDetailContainer{
+  border: 1px solid var(--lightSecundary);
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+.order_details{
+  background-color: transparent;
+}
+
+
+input {
+  padding-left: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: solid 1px var(--lightSecundary);
+  box-shadow: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important;
+  padding: 0;
+  
+}
+
+
+.quantity input{
+  background: transparent;
+  border: 0;
+  padding: 2px;
+}
+
+
+
+.quantity input{
+  background: transparent !important; 
+  border: 0!important; 
+  padding: 0 5px!important; 
+  box-shadow: 0 !important;
+
+}
+
+.quantity input:focus{
+  background: transparent !important; 
+  border: 0!important; 
+  padding: 0 5px!important; 
+  box-shadow: 0 !important;
+  outline-color: transparent !important;
+
+}
+
+/* Eliminar las flechas en los navegadores WebKit (Chrome, Safari, etc.) */
+.quantity input[type="number"]::-webkit-outer-spin-button,
+.quantity input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Elimina los botones */
+    margin: 0; /* Elimina márgenes */
+}
+
+/* Eliminar las flechas en Firefox */
+.quantity input[type="number"]::-moz-appearance: textfield;
+
+
+
+/*Form Comments Styles*/
+
+#respond{
+  padding: 0 !important;
+}
+
+.comment-respond{
+  padding: 0 !important;
+
+}
+
+p.stars.selected a.active:before, p.stars:hover a:before, p.stars.selected a:not(.active):before, p.stars.selected a.active:before {
+  color: #FACC15;
+  font-weight: 900 ;
+}
+
+
+
+
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 2px solid var(--primary);
+}
+
+
+.form-submit {
+  display: flex;
+  justify-content: flex-end; 
+  padding-top: 10px;
+}
+.form-submit input{
+  border-radius: 100px ;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 8px 50px !important;
+}
+
+
+/* estilos pra el meta */
+
+.storefront-sorting
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.woocommerce-result-count{
+  font-size: 14px;
+  font-weight: 600px;
+}
+
+.storefront-sorting::before{
+  display: none;
+}
+
+.storefront-sorting::after{
+  display: none;
+}
+
+
+.woocommerce-notices-wrapper{
+  display: none;
+
+}
+
+.none{
+  display: none !important;
+}
+
+

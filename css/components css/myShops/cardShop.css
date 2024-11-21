@@ -1,0 +1,85 @@
+.shortcodeShopContainer {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--lightSecundary); 
+
+}
+
+.cardShopContainer {
+    padding: 10px;
+
+}
+
+.cardShopSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardShopMainInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardShopTitle {
+    font-weight: bold;
+}
+
+.cardShopIcon {
+    background-color: var(--lightPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.cardShopBtnsContainer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.cardShopBtnsContainer button {
+    color: var(--primary);
+    border-radius: 10px;
+    border: solid 1px var(--primary);
+    background-color: transparent;
+    transition: .3s;
+}
+
+.cardShopBtnsContainer button:hover {
+
+    background-color: var(--lightPrimary);
+}
+
+.disponibleBtn {
+    background-color: var(--lightPrimary);
+    cursor: pointer;
+}
+
+.noDisponibleBtn {
+    background-color: lightgray !important;
+    user-select: none;
+    cursor: not-allowed;
+    border-radius: 10px;
+
+}
+
+.noDisponibleBtn button {
+    background-color: lightgray !important;
+    user-select: none;
+    cursor: not-allowed;
+    border-radius: 10px;
+    color: gray;
+    border: solid 1px var(--lightPrimary);
+
+}
+
+.noDisponibleBtn button:hover {
+
+    color: gray;
+
+}

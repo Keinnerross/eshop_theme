@@ -1,0 +1,24 @@
+.woocommerce-EditAccountForm {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--lightSecundary);
+}
+
+.changePasswordContainer {
+    padding: 0;
+}
+
+
+.buttonMyAccountEdit {
+    
+    border-radius: 9px !important;
+    transition: .3s;
+    color: white !important;
+    background-color: var(--primary) !important;
+}
+
+.buttonMyAccountEdit:hover {
+    background-color: var(--otrocolor) !important;
+  
+}

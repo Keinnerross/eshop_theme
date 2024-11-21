@@ -1,0 +1,236 @@
+.simpleHeaderContainer,
+.fullHeaderContainer{
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.simpleHeaderSection,
+.fullHeaderSection {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.fullHeaderContainer {
+    background-color: white;
+    border-bottom: 1px solid var(--lightSecundary);
+}
+
+
+
+
+.logoHeaderSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoHeaderSection span {
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+.logoHeader {
+    width: 58px;
+    height: 30px;
+}
+
+
+
+
+.navMenuContainer ul {
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: bold;
+
+
+}
+
+.simpleNav {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    align-items: center;
+}
+
+
+.navSimpleMenuText {
+    padding: 10px 20px;
+    border: 3px solid var(--primary);
+    border-radius: 9px;
+    color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.navSimpleMenuText:hover {
+    background-color: var(--tertiary);
+}
+
+.loginBtn {
+    padding: 10px 20px;
+    border: 3px solid var(--primary);
+    border-radius: 9px;
+    color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: var(--tertiary);
+}
+
+.logoutBtn {
+    font-weight: bold;
+    color: var(--primary);
+
+}
+
+
+
+
+.headerNavSection {
+    display: flex;
+    gap: 45px;
+    height: 100%;
+}
+
+.userFullNav ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.userFullNav ul>a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userFullNav ul>a:hover {
+    background-color: var(--tertiary);
+}
+
+.headerButtonsSection {
+    display: flex;
+    gap: 30px;
+}
+
+.headerButtons {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+.activeMenuItem {
+    background-color: var(--lightPrimary);
+    border-bottom: 2px solid var(--primary);
+}
+
+
+
+
+
+/***MODAL WINDOW MENU*****/
+
+
+
+.modalMenuBackActive {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.modalMenuContainer {
+    /* background-color: white;
+    width: 280px;
+    position: fixed;
+    top: 80px;
+    right: 60px;
+    border-radius: 12px; */
+}
+
+
+.modalMenuTitle {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.userNameNav {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+.modalMenuNavSection {
+    display: flex;
+    justify-content: center;
+}
+
+.modalMenuNavSection ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 25px;
+}
+
+.modalMenuNavSection ul>a {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.modalMenuNavSection ul a>li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.modalMenuNavSection ul>a:hover {
+    border-radius: 9px;
+    background-color: var(--lightPrimary);
+}
+
+.btnNavContainer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.btnNavContainer button {
+    width: 100%;
+    border: solid 1px var(--tertiary);
+    background-color: white;
+    border-radius: 9px;
+}
+
+.btnNavContainer button:hover {
+    background-color: var(lightPrimary);
+}

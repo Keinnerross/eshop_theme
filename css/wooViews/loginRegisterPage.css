@@ -1,0 +1,114 @@
+.loginRegisterContainer {
+    width: 100vw;
+    background-color: var(--lightPrimary);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9999999999999999;
+}
+
+
+
+.loginImg {
+    background-image: url("https://images.shulcloud.com/7780/uploads/Sliders/homepageslider/israeli-rally-dc-nov-14-2023.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+    transform: scale(1.1);
+}
+
+.loginRegisterSection {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightPrimary);
+    border-radius: 15px 0 0 15px;
+    z-index: 9999;
+    overflow-y: scroll;
+    padding: 75px 0;
+
+}
+
+.loginRegisterCol {
+    width: 60%;
+
+}
+
+.logoLoginSection {
+    width: 35px;
+    height: 7px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+
+.titleLogin {
+    color: var(--secondary);
+    font-size: 50px !important;
+    font-weight: bold;
+}
+
+
+
+
+
+.loginContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.formLoginContainer {
+    padding: 0;
+    padding-top: 25px;
+    background-color: transparent !important;
+}
+
+.loginFormBtn,
+.registerFormBtn {
+    background-color: var(--primary) !important;
+    color: white !important;
+    margin-top: 15px;
+    border-radius: 400px !important;
+    padding: 15px 20px !important;
+}
+
+.lost_password {
+    color: var(--primary);
+    margin: 0;
+}
+
+.registerBtnText,
+.loginBtnText {
+    padding-top: 20px;
+    text-align: left;
+
+}
+
+.registerBtnText span,
+.loginBtnText span {
+    font-weight: bold;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+
+.registerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRegisterContainer {
+    background-color: transparent !important;
+    padding: 0 !important;
+}

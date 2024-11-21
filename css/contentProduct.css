@@ -1,0 +1,167 @@
+.productCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid var(--tertiary);
+    text-align: left;
+    border-radius: 9px;
+    transition: .6s;
+    background-color: white;
+}
+
+.highlightedContainer {
+    border: 2px solid var(--primary) !important;
+    border-radius: 0 0 9px 9px;
+    padding: 40px 40px 80px 40px;
+}
+
+.highlightedTitle {
+    content: "MÁS VENDIDO";
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: 9px 9px 0 0;
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    font-weight: bold;
+
+}
+
+.productCardContainer:hover {
+    box-shadow: 0px 0px 33px -11px rgba(77, 77, 77, 0.75);
+}
+
+.productCardSection {
+    width: 100%;
+}
+
+
+.productCardTitleContainer {
+    padding-bottom: 25px;
+}
+
+.productCardTitle {
+    font-size: 30px;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.productCardTitleDescription {
+    color: var(--secondary);
+    padding-bottom: 25px;
+}
+
+.productCartDiscountSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.priceCrossOut {
+    text-decoration: line-through;
+}
+
+.labelDiscount {
+    background: var(--bg);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.productCardSaleSection {
+    padding-bottom: 25px;
+
+}
+
+
+.productCartSale {
+    font-size: 45px;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.productCardSaleAux {
+    color: var(--secondary);
+    font-size: 22px;
+}
+
+
+.productCardHighlight {
+    font-weight: bold;
+    color: var(--primary);
+
+}
+
+
+
+.productCartAddButton {
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    transition: .6s;
+}
+
+.productCartAddButton:hover {
+    background-color: var(--lightPrimary);
+}
+
+.highlightedButton {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.highlightedButton:hover {
+    background-color: var(--darkPrimary) !important;
+}
+
+
+.line {
+    margin: 30px 0;
+    border-top: 1px solid var(--tertiary);
+}
+
+/* La clase ProductCardSaleSectionListDescription se encuentra en el módulo de producto dentro del WP-ADMIN (Backend Gráfico)
+
+Se le es asignada a un elemento "<ul>" que a su vez tiene elementos "<li>" con clase "activo" para elementos que SI incluyen dentro del servicio y noActivo para elementos que NO incluyen dentro del servicio. ↓↓↓
+
+*/
+
+.ProductCardSaleSectionListDescription {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.listDescriptionService {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    display: flex;
+    align-items: center;
+    color: var(--secondary);
+    text-decoration-color: lightslategray;
+    font-size: 18px;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
+.listDescriptionService::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url('http://usercompanyapp.local/wp-content/uploads/2024/07/check.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+
+}

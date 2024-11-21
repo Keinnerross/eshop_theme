@@ -1,0 +1,43 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuración de entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos generados
+dist/
+build/
+*.log
+
+# WordPress
+*.sql
+*.sql.gz
+wp-config.php
+wp-content/debug.log
+wp-content/uploads/
+wp-content/upgrade/
+
+# WooCommerce
+woocommerce/logs/
+woocommerce_uploads/
+woocommerce/error_logs/
+
+# Otros
+.vscode/
+.idea/
+*.bak
+*.swp
+*.swo
+
+# Archivos específicos de Tailwind o compiladores CSS
+*.css.map
+*.scss.map

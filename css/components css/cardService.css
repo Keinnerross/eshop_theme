@@ -1,0 +1,41 @@
+.cardServicesModuleContainer {
+    width: 30%;
+    background-color: white;
+    border-radius: 12px;
+    transition: .3s;
+    cursor: pointer
+
+}
+
+.cardServicesModuleContainer:hover{
+    transform: scale(1.03);
+}
+
+.servicePicture{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px 12px 0 0;
+
+}
+
+.cardServiceInfoContainer{
+    padding: 25px;
+    
+}
+
+.cardServiceInfoContainer h4{
+    font-weight: bold;
+    
+}
+
+.priceLabel{
+    font-weight: bold;
+}
+
+.cardServicePriceContainer{
+    display: flex;
+    justify-content: space-between;
+}
