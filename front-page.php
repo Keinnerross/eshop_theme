@@ -5,7 +5,7 @@
 <?php require_once get_stylesheet_directory() . '/components/frontpage/featuredProducts.php' ?>
 <?php require_once get_stylesheet_directory() . '/components/frontpage/welcomeMessage.php' ?>
 
-<div id="primary" class="min-h-[80vh] flex justify-center  w-screen mt-[90px] ">
+<div id="primary" class="min-h-[80vh] flex justify-center  w-screen md:mt-[90px] mt-[60px] ">
 
 	<main class="w-full flex items-center flex-col ">
 		<?php BannerMain() ?>

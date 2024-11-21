@@ -11,19 +11,19 @@ function BannerMain()
 ?>
 
 
-    <div class="w-full min-h-[<?php echo $hight ?>] h-[<?php echo $hight ?>]  max-h-[<?php echo $hight ?>] relative  flex justify-center items-center pt-[60px]">
+    <div class="w-full min-h-[<?php echo $hight ?>] md:h-[<?php echo $hight ?>]  md:max-h-[<?php echo $hight ?>] relative  flex justify-center items-center flex-column md:flex-row pt-[60px]">
         <div id="gradient" class="w-full h-full flex items-center justify-center absolute top-0 bg-slate-300 bg-gradient-to-t from-slate-50 from-30% via-transparent via-100% z-[-1]"></div> <!-- close gradient -->
 
 
-        <div class="w-[85%] flex justify- items-center h-full ">
+        <div class="w-[85%] flex md:flex-row flex-col-reverse items-center h-full ">
 
-            <div class="flex flex-col justify-center h-full w-1/2">
-                <div>
-                    <span class="text-3xl text-primary  font-bold leading-[3.5rem] ">Sisterhood Judaica</span>
-                    <h2 class="text-7xl text-primary  font-extrabold leading-[3.5rem]"> Gift Shop CSAIR</h2>
+            <div class="flex flex-col justify-center h-full w-full md:w-1/2">
+                <div class="text-center md:text-left">
+                    <span class="text-3xl text-primary  font-bold md:leading-[3.5rem] ">Sisterhood Judaica</span>
+                    <h2 class="text-4xl md:text-7xl text-primary  font-extrabold md:leading-[3.5rem]"> Gift Shop CSAIR</h2>
 
                 </div>
-                <div class="sliderFront w-full pt-8">
+                <div class="sliderFront w-full pt-8 text-center md:text-left">
                     <p class="text-2xl text-primary  font-medium">Perfect gifts for Jewish celebrations</p>
                     <p class="text-2xl text-primary font-medium">Meaningful Jewish gifts and treasures</p>
                     <p class="text-2xl text-primary font-medium">Support our community with Csair gifts</p>
@@ -32,7 +32,7 @@ function BannerMain()
                     <?php echo do_shortcode('[fibosearch]');  ?>
                 </div>
                 <div class="relative h-[30%] flex gap-4">
-                    <div class="absolute bottom-0 flex items-center gap-4">
+                    <div class="md:absolute bottom-0 flex md:flex-row flex-col items-center gap-4 text-center md:text-left">
                         <div class="flex gap-4 ">
                             <a hre="#" class="<?php echo $socialBtn ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             <a hre="#" class="<?php echo $socialBtn ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -45,7 +45,7 @@ function BannerMain()
 
             </div> <!-- close text section -->
 
-            <div class="w-1/2 h-full flex justify-center items-center animate-fade">
+            <div class="md:w-1/2 w-full h-[50vh] flex justify-center items-center animate-fade">
                 <?php imgMain() ?>
             </div>
 

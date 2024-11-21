@@ -107,3 +107,139 @@
     transform: translate(130%, 40%) rotate(3deg);
   }
 }
+
+
+/* Móvil (hasta 767px) */
+@media screen and (max-width: 767px) {
+    .imgComponent {
+        position: absolute;
+      }
+
+      .imgMainImg {
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        transform: translate(-50%, -50%);
+        z-index: 30;
+        animation: floatMobil 6s ease-in-out infinite;
+
+
+      }
+      
+      .wing_1 {
+        top: 50%;
+        left: 50%;
+        width: 510px;
+        transform: translate(-60%, -54%);
+        z-index: 20;
+        animation-delay: 0.5s;
+        animation: wingFloat1Mobil 8s ease-in-out infinite;
+
+      }
+      
+      .wing_2 {
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        transform: translate(25%, -30%);
+        animation: wingFloat2Mobil 8s ease-in-out infinite;
+        z-index: 20;
+        animation-delay: 1s;
+
+      }
+      
+      .book {
+        top: 50%;
+        left: 50%;
+        width: 130px;
+        transform: translate(-140%, -90%);
+        animation: bookFloatMobil 7s ease-in-out infinite;
+        z-index: 40;
+        animation-delay: 0.7s;
+
+      }
+      .candle {
+        top: 50%;
+        left: 50%;
+        width: 120px;
+        transform: translate(30%, 5%);
+        z-index: 40;
+        animation-delay: 0.8s;
+        animation: candleFloatMobil 6s ease-in-out infinite;
+
+
+      }
+
+/* Animación general para el flotante */
+@keyframes floatMobil {
+    0%,
+    100% {
+      transform: translate(-50%, -50%);
+    }
+    50% {
+      transform: translate(-55%, -55%);
+    }
+  }
+  
+  /* Animación para el movimiento del ala 1 */
+  @keyframes wingFloat1Mobil {
+    0%,
+    100% {
+              transform: translate(-60%, -54%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-65%, -60%) rotate(-3deg);
+    }
+  }
+  
+  /* Animación para el movimiento del ala 2 */
+  @keyframes wingFloat2Mobil {
+    0%,
+    100% {
+        
+        transform: translate(25%, -30%) rotate(0deg);
+    }
+    50% {
+      transform: translate(29%, -25%) rotate(3deg);
+    }
+  }
+  
+  /* Animación para el movimiento del libro */
+  @keyframes bookFloatMobil {
+    0%,
+    100% {
+        transform: translate(-140%, -90%)rotate(0deg);
+
+    }
+    50% {
+      transform: translate(-145%, -95%) rotate(-5deg);
+    }
+  }
+  
+  /* Animación para el movimiento de la vela */
+  @keyframes candleFloatMobil {
+    0%,
+    100% {
+        transform: translate(30%, 5%) rotate(0deg);
+    }
+    50% {
+        transform: translate(35%, 10%) rotate(3deg);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+}
+
+/* Tablet (768px a 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+}
+

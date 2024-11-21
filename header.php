@@ -44,8 +44,8 @@ require_once get_stylesheet_directory() . "/components/header/modalCategoriesMob
                     <p>This is a <span class="font-semibold">DEMO version</span>, the website is under build 🏗️</p>
                     <div class="flex gap-2 items-center">
                         <i class="fa fa-globe" aria-hidden="true"></i>
-                            <a href="www.csair.org" target="_blank" class="text-white"> csair.org</a>
-                     
+                        <a href="www.csair.org" target="_blank" class="text-white"> csair.org</a>
+
                     </div>
 
                 </div>
@@ -130,16 +130,11 @@ require_once get_stylesheet_directory() . "/components/header/modalCategoriesMob
         </header>
 
 
-
-        <!-- Modal Window -->
-
-
-
         <!-- Header Mobile -->
 
 
-        <header class="md:hidden bg-slate-500 h-[60px] flex justify-center items-center">
-            <div class="flex items-center justify-between w-full bg-slate-300 h-full">
+        <header class="md:hidden  flex justify-center items-center relative " style="z-index:1000;">
+            <div class="flex items-center justify-between w-full bg-primary  fixed top-0 left-0 h-[60px] ">
 
                 <div class="flex gap-4 h-full">
 
