@@ -8,14 +8,17 @@
   width: 600px;
   transform: translate(-50%, -50%);
   z-index: 30;
+  animation: float 6s ease-in-out infinite;
 }
 
 .wing_1 {
   top: 50%;
   left: 50%;
-  width: 500px;
+  width: 510px;
   transform: translate(-70%, -67%);
   z-index: 20;
+  animation: wingFloat1 8s ease-in-out infinite;
+  animation-delay: 0.5s;
 }
 
 .wing_2 {
@@ -24,6 +27,8 @@
   width: 200px;
   transform: translate(48%, -13%);
   z-index: 20;
+  animation: wingFloat2 8s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .book {
@@ -32,12 +37,73 @@
   width: 130px;
   transform: translate(-250%, -150%);
   z-index: 40;
+  animation: bookFloat 7s ease-in-out infinite;
+  animation-delay: 0.7s;
 }
-
 .candle {
   top: 50%;
   left: 50%;
   width: 120px;
   transform: translate(145%, 30%);
   z-index: 40;
+  animation: candleFloat 6s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+
+
+
+/* Animación general para el flotante */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -53%);
+  }
+}
+
+/* Animación para el movimiento del ala 1 */
+@keyframes wingFloat1 {
+  0%,
+  100% {
+    transform: translate(-73%, -67%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-68%, -60%) rotate(-3deg);
+  }
+}
+
+/* Animación para el movimiento del ala 2 */
+@keyframes wingFloat2 {
+  0%,
+  100% {
+    transform: translate(48%, -13%) rotate(0deg);
+  }
+  50% {
+    transform: translate(53%, -8%) rotate(3deg);
+  }
+}
+
+/* Animación para el movimiento del libro */
+@keyframes bookFloat {
+  0%,
+  100% {
+    transform: translate(-250%, -150%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-240%, -160%) rotate(-5deg);
+  }
+}
+
+/* Animación para el movimiento de la vela */
+@keyframes candleFloat {
+  0%,
+  100% {
+    transform: translate(145%, 30%) rotate(0deg);
+  }
+  50% {
+    transform: translate(130%, 40%) rotate(3deg);
+  }
 }

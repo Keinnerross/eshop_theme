@@ -5,9 +5,9 @@
 <?php require_once get_stylesheet_directory() . '/components/frontpage/featuredProducts.php' ?>
 <?php require_once get_stylesheet_directory() . '/components/frontpage/welcomeMessage.php' ?>
 
-<div id="primary" class="min-h-[80vh] flex justify-center  w-screen " style="margin-top: 80px;">
+<div id="primary" class="min-h-[80vh] flex justify-center  w-screen " style="margin-top: 90px;">
 
-	<main class="w-full flex items-center flex-col">
+	<main class="w-full flex items-center flex-col ">
 		<?php BannerMain() ?>
 		<?php SliderAux() ?>
 		<?php CategoriesFestivities() ?>
