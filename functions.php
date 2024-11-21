@@ -83,6 +83,8 @@ function additionalStyles()
     wp_register_style('myAccountEdit', get_stylesheet_directory_uri() . '/css/wooViews/myAccountEdit.css', array(), '1.0', 'all');
     wp_register_style('loginRegisterPage', get_stylesheet_directory_uri() . '/css/wooViews/loginRegisterPage.css', array(), '1.0', 'all');
 
+    wp_register_style('imgMain', get_stylesheet_directory_uri() . '/css/animations/imgMain.css', array(), '1.0', 'all');
+
     wp_enqueue_style('contentProduct');
     wp_enqueue_style('headerStyles');
     wp_enqueue_style('checkoutStyles');
@@ -95,6 +97,7 @@ function additionalStyles()
     wp_enqueue_style('myOrders');
     wp_enqueue_style('myAccountEdit');
     wp_enqueue_style('loginRegisterPage');
+    wp_enqueue_style('imgMain');
 }
 add_action('wp_enqueue_scripts', 'additionalStyles');
 

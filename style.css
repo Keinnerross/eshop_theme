@@ -288,3 +288,8 @@ a:focus, input:focus, textarea:focus, button:focus {
 }
 
 
+
+/* estilos searchbar */
+.dgwt-wcas-search-wrapp {
+  margin: 0 !important;
+}
