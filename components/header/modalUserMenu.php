@@ -14,6 +14,13 @@
                 <div class="modalMenuNavContainer">
                     <nav class="modalMenuNavSection">
                         <ul>
+                        <?php
+                            // Mostrar "Mis Pedidos"
+                            $misPedidosKey = 'orders'; // Endpoint de pedidos
+                            $urlMisPedidos = wc_get_account_endpoint_url($misPedidosKey);
+                            $misPedidosName = __('Mis pedidos', 'text-domain'); // Cambia 'text-domain' por tu dominio de texto
+                            echo ' <a href="' . esc_url($urlMisPedidos) . '"> <li> <i class="fa fa-shopping-bag" aria-hidden="true"></i> ' . esc_html($misPedidosName) . '</li> </a>';
+                            ?>
 
                             <?php
                             $custom_menu_items = apply_filters('woocommerce_account_menu_items', array());
@@ -33,14 +40,7 @@
 
 
 
-                            <a>
-                                <?php
-                                $gtranslate_shortcode_result = do_shortcode('[gtranslate]');
-
-                                // Imprime el resultado del shortcode
-                                echo $gtranslate_shortcode_result;
-                                ?>
-                            </a>
+                       
 
 
                         </ul>
