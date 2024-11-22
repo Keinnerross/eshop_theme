@@ -1,6 +1,6 @@
 .woocommerce-EditAccountForm {
     background-color: white;
-    padding: 30px;
+    padding: 30px !important;
     border-radius: 10px;
     border: 1px solid var(--lightSecundary);
 }
@@ -15,10 +15,10 @@
     border-radius: 9px !important;
     transition: .3s;
     color: white !important;
-    background-color: var(--primary) !important;
+    background-color: #1e40af  !important;
 }
 
 .buttonMyAccountEdit:hover {
-    background-color: var(--otrocolor) !important;
+    background-color: #294fcb  !important;
   
 }

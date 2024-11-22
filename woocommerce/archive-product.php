@@ -5,7 +5,7 @@ get_header();
 <?php require_once get_stylesheet_directory() . '/components/sidebarShop/priceFilter.php'; ?>
 <?php require_once get_stylesheet_directory() . '/components/sidebarShop/categoriesBar.php'; ?>
 
-<div id="primary" class="w-screen min-h-[100vh] flex justify-center " style="margin-top: 128px;">
+<div id="primary" class="w-screen min-h-[100vh] flex justify-center md:mt-[128px] mt-[50px] " >
 
 	<main class=" w-[90vw] max-w-[1650px] flex pt-4">
 

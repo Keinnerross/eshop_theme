@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Edit account form
  *
@@ -19,9 +20,9 @@ defined('ABSPATH') || exit;
 
 do_action('woocommerce_before_edit_account_form'); ?>
 <div>
-	<h3 style="font-weight: bold;">Configuración de la cuenta</h3>
+	<h3 class="py-6 !text-3xl w-full text-center" style="font-weight: bold;">Account settings</h3>
 	<form class="woocommerce-EditAccountForm edit-account" action="" method="post" <?php do_action('woocommerce_edit_account_form_tag'); ?>>
-		<h4 style="font-weight: bold;">Información Personal</h4>
+		<h4 style="font-weight: bold;">Personal Information</h4>
 		<?php do_action('woocommerce_edit_account_form_start'); ?>
 
 		<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">

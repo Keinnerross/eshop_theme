@@ -57,7 +57,7 @@ form{
   
   /* Estilo del checkbox en estado activo */
   input[type="checkbox"]:checked {
-      background-color:white;
+    background-color:rgb(236, 236, 236) !important;
   }
   
   /* Punto en el centro cuando está activo */
@@ -72,6 +72,7 @@ form{
       border-radius: 50%;
       transform: translate(-50%, -50%);
   }
+
 
 
 ul,
@@ -154,7 +155,7 @@ a:active {
 
 .orderDetailContainer{
   border: 1px solid var(--lightSecundary);
-  background-color: white;
+  background-color:rgb(236, 236, 236) !important;
   padding: 30px;
   border-radius: 10px;
 }
@@ -162,11 +163,14 @@ a:active {
   background-color: transparent;
 }
 
+select{
+  background-color:rgb(236, 236, 236) !important;
+}
 
 input {
   padding-left: 15px;
   border-radius: 15px;
-  background-color: white;
+  background-color:rgb(236, 236, 236) !important;
   border: solid 1px var(--lightSecundary);
   box-shadow: none !important;
 }

@@ -112,3 +112,22 @@
     background-color: transparent !important;
     padding: 0 !important;
 }
+
+
+@media (max-width: 767px) {
+    /* Aquí va tu CSS */
+
+    .loginImg {
+        display: none;
+    }
+    .loginRegisterContainer {
+        height: 100vh;
+    
+    }
+    .loginRegisterSection{
+        width: 100vh;
+    }
+    .loginRegisterCol{
+        width: 85%;
+    }
+}

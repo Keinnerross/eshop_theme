@@ -16,6 +16,8 @@ require_once get_stylesheet_directory() . "/components/header/modalCategoriesMob
 
 
 
+$logoMobileWhite = get_stylesheet_directory_uri() . "/assets/logo_mobile.png";
+
 
 ?>
 <!doctype html>
@@ -138,24 +140,31 @@ require_once get_stylesheet_directory() . "/components/header/modalCategoriesMob
 
                 <div class="flex gap-4 h-full">
 
-                    <div class="px-4 flex items-center justify-center h-full  gap-2 cursor-pointer relative">
+                    <div class="px-4 flex items-center justify-center h-full  gap-4 cursor-pointer relative">
                         <i id="categoriesBtnMobile" class="fa fa-bars fa-lg text-white" aria-hidden="true"></i>
 
                         <!-- Modal Categories -->
                         <?php modalCategoriesMobile(); ?>
+                       <a href="/"> <div class="w-[100px] py-2  h-[70%]">
+                            <img src="<?php echo $logoMobileWhite ?>" class="object-contain"> </img>
+                        </div></a>
                     </div>
+
 
                 </div>
                 <div>
-                    <nav class="text-white">
+                    <nav class=" text-white">
                         <div class="flex gap-8 px-4">
-                            <div class="flex items-center gap-2 cursor-pointer">
-                                <i class="fa fa-globe"></i>
-                                <span>EN</span>
+                            <div class="flex items-center gap-2 cursor-pointer w-12">
+                                <?php echo do_shortcode('[gt-link  lang="iw"  widget_look="flags"]'); ?>
+                                <?php echo do_shortcode('[gt-link  lang="en"  widget_look="flags"]'); ?>
                             </div>
-                            <div id="userBtn" class="flex items-center gap-2 cursor-pointer">
-                                <i class="far fa-user"></i>
-                            </div>
+                            <a href="/my-account" class="flex items-center"> 
+
+                                <div id="userBtn" class="flex items-center gap-2 cursor-pointer">
+                                    <i class="far fa-user"></i>
+                                </div>
+                            </a>
                             <div class="flex items-center gap-2 cursor-pointer">
                                 <a href="<?php echo esc_url(wc_get_cart_url()); ?>" class="flex items-center">
                                     <i class="fas fa-shopping-cart"></i>

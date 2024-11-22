@@ -1,5 +1,6 @@
 .woocommerce-info{
     background-color: var(--primary) !important;
     border-radius: 9px !important;
+    padding: 10px 0;
 }
 

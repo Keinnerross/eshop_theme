@@ -32,26 +32,26 @@
 				<div class='hidden md:flex flex-col pl-[30%] '>
 					<h3 class="font-semibold text-gray-800 text-xl">Menu</h3>
 					<p class='text-sm font-medium  pt-2'>
-						<li class="text-sm">Home</li>
-						<li class="text-sm">Shop</li>
-						<li class="text-sm">My Account</li>
-						<li class="text-sm">Resoucers</li>
-						<li class="text-sm">About us</li>
+						<a href="/"><li class="text-sm">Home</li></a>
+						<a href="/shop"> <li class="text-sm">Shop</li></a>
+						<a href="/my-account"><li class="text-sm">My Account</li></a>
+						<a href="#"><li class="text-sm">Resoucers</li></a>
+						<a href="/"><li class="text-sm">About us</li></a>
 						</ul>
 				</div>
 				<div class='hidden md:block'>
-					<h3 class="font-semibold text-gray-800 text-xl">Recursos</h3>
+					<h3 class="font-semibold text-gray-800 text-xl">Resources</h3>
 					<ul class="text-smtext-gray-600 pt-2">
 						<a href='#'>
 							<li class="text-sm">FAQ</li>
 						</a>
 						<a href='#'>
-							<li class="text-sm">Términos y condiciones</li>
+							<li class="text-sm">Terms and conditions</li>
 						</a>
 					</ul>
 				</div>
 				<div class='md:block flex justify-center flex-col items-center'>
-					<h3 class="font-semibold text-gray-800 text-xl">Contácto</h3>
+					<h3 class="font-semibold text-gray-800 text-xl">Contact</h3>
 					<ul class="text-sm  text-gray-600 flex flex-col items-center md:items-start gap-2 pt-2">
 						<a href='#' class='flex gap-2 items-center'>
 							<i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
@@ -74,11 +74,8 @@
 			</div>
 
 			<div class="flex justify-center space-x-6 mb-4">
-				<span>x</span>
-				<span>x</span>
-				<span>x</span>
-				<span>x</span>
-				<span>x</span>
+				<h3 class="text-gray-600 text-sm text-center">©2024 All rights reserved. Powered by <a class="font-medium" href="https://keinnerross.github.io/portfolioross/">KeinnerRoss</a> 
+				</h3>
 			</div>
 		</div>
 	</footer>

@@ -76,7 +76,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 						<p class="form-row">
 
 						<p class="woocommerce-LostPassword lost_password">
-							<a href="<?php echo esc_url(wp_lostpassword_url()); ?>">Olvidé mi contraseña</a>
+							<a href="<?php echo esc_url(wp_lostpassword_url()); ?>">Forgot my password</a>
 						</p>
 
 
