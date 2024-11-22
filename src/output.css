@@ -713,18 +713,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-\[90px\] {
-  margin-top: 90px;
-}
-
-.mt-\[40px\] {
-  margin-top: 40px;
-}
-
-.mt-\[100px\] {
-  margin-top: 100px;
-}
-
 .mt-\[60px\] {
   margin-top: 60px;
 }
@@ -796,6 +784,10 @@ video {
   height: 50px;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .h-\[60px\] {
   height: 60px;
 }
@@ -812,28 +804,16 @@ video {
   height: 100vh;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[50\%\] {
-  height: 50%;
-}
-
-.h-\[30vh\] {
-  height: 30vh;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
 .max-h-\[80px\] {
   max-height: 80px;
 }
 
 .max-h-\[80vh\] {
   max-height: 80vh;
+}
+
+.min-h-\[100px\] {
+  min-height: 100px;
 }
 
 .min-h-\[100vh\] {
@@ -854,10 +834,6 @@ video {
 
 .min-h-\[80vh\] {
   min-height: 80vh;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-14 {
@@ -1227,11 +1203,6 @@ video {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .bg-slate-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
@@ -1424,6 +1395,14 @@ video {
   padding-top: 60px;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1454,11 +1433,6 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
 }
 
 .text-base {
@@ -1520,10 +1494,6 @@ video {
 
 .leading-5 {
   line-height: 1.25rem;
-}
-
-.leading-\[3\.5rem\] {
-  line-height: 3.5rem;
 }
 
 .leading-relaxed {
@@ -1790,6 +1760,22 @@ video {
     height: 32rem;
   }
 
+  .md\:h-\[28rem\] {
+    height: 28rem;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:min-h-\[200px\] {
+    min-height: 200px;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:w-\[32rem\] {
     width: 32rem;
   }
@@ -1802,8 +1788,8 @@ video {
     width: 80vw;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
+  .md\:w-\[75vw\] {
+    width: 75vw;
   }
 
   .md\:grid-cols-3 {
@@ -1820,6 +1806,10 @@ video {
 
   .md\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .md\:bg-center {
+    background-position: center;
   }
 
   .md\:p-4 {
@@ -1841,6 +1831,11 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:pb-\[75px\] {
     padding-bottom: 75px;
   }
@@ -1849,13 +1844,32 @@ video {
     padding-top: 0px;
   }
 
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:leading-\[3\.5rem\] {

@@ -46,7 +46,7 @@
                     <div class="w-20 h-20">
                         <img src="<?php echo $festivity->icon; ?>" class=" h-20 object-contain"> </img>
                     </div>
-                    <p> <?php echo $festivity->title; ?></p>
+                    <p class="text-center"> <?php echo $festivity->title; ?></p>
                 </div>
             </div>
 

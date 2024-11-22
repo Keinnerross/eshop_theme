@@ -15,7 +15,7 @@ function BannerMain()
         <div id="gradient" class="w-full h-full flex items-center justify-center absolute top-0 bg-slate-300 bg-gradient-to-t from-slate-50 from-30% via-transparent via-100% z-[-1]"></div> <!-- close gradient -->
 
 
-        <div class="w-[85%] flex md:flex-row flex-col-reverse items-center h-full ">
+        <div class="w-[85%] flex md:flex-row flex-col items-center md:h-full pb-12 md:pb-0 ">
 
             <div class="flex flex-col justify-center h-full w-full md:w-1/2">
                 <div class="text-center md:text-left">
