@@ -115,11 +115,8 @@
 
 
 @media (max-width: 767px) {
-    /* Aquí va tu CSS */
 
-    .loginImg {
-        display: none;
-    }
+  
     .loginRegisterContainer {
         height: 100vh;
     

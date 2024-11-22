@@ -25,8 +25,9 @@ do_action('woocommerce_before_customer_login_form'); ?>
 <?php if ('yes' === get_option('woocommerce_enable_myaccount_registration')): ?>
 
 	<div class="loginRegisterContainer ">
-		<div class="loginImg">
-			<!-- IMAGEN -->
+		<div
+			class="hidden md:block bg-center bg-cover bg-no-repeat w-1/2 h-screen scale-110"
+			style="background-image: url('https://images.shulcloud.com/7780/uploads/Sliders/homepageslider/israeli-rally-dc-nov-14-2023.jpg');">
 		</div>
 		<div class="loginRegisterSection">
 			<div class="loginRegisterCol">
@@ -181,7 +182,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 					</form>
 					<p class="loginBtnText">
-					Already have an account? <span class="loginBtnToggle">Log in</span>
+						Already have an account? <span class="loginBtnToggle">Log in</span>
 					</p>
 				</div>
 

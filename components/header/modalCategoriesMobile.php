@@ -11,11 +11,11 @@
 
             <div class=" ">
                 <div class="border-b border-gray-300 px-4">
-                    <h4 class="text-[#1c1c1c] py-2 font-medium">Hi!</h4>
+                    <h4 class="text-[#262626] py-2 font-medium">Hi!</h4>
                 </div>
                 <div>
                     <div class="modalMenuNavContainer">
-                        <ul class="flex flex-col gap-4 px-6 py-4 text-lg text-[#1c1c1c]">
+                        <ul class="flex flex-col gap-4 px-6 py-4 text-base text-[#262626]">
                             <?php
                             // Mostrar "Mis Pedidos"
                             $misPedidosKey = 'orders'; // Endpoint de pedidos
@@ -54,9 +54,9 @@
                 </div>
                 <div class="px-6 border-t border-gray-300 py-4">
 
-                    <h3 class="py-2 text-[#1c1c1c]">Categories</h3>
+                    <h3 class="py-2 text-[#262626]">Categories</h3>
 
-                    <ul class="text-[#1c1c1c] text-lg ">
+                    <ul class="text-[#262626] text-base ">
 
 
                         <?php
