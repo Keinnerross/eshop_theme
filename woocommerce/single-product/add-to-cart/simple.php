@@ -44,15 +44,29 @@ $salePrice = $product->get_sale_price();        // Offert Price
 <?php
 
 if ($product->is_in_stock()) : ?>
+	<span class="text-sm text-red-600 font-semibold">
+		<?php
+		if ($product->managing_stock()) { // Si el producto está gestionando el stock
+			$stock_quantity = $product->get_stock_quantity(); // Obtén la cantidad de stock
 
+			if ($stock_quantity < 10 && $stock_quantity > 0) { // Si el stock es menor a 10
+				echo 'Only ' . $stock_quantity . ' items left in stock.';
+			}
+		} else {
+			echo 'Este producto no tiene stock gestionado.';
+		}
+		?>
+
+	</span>
 
 	<form class="cart" action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>" method="post" enctype='multipart/form-data'>
 
 		<?php do_action('woocommerce_before_add_to_cart_button'); ?>
-		<div class="max-w-screen flex justify-between md:block gap-2 ">
+		<div class="w-full  flex items-end gap-4 md:block ">
 
 
-			<div class="flex border-[1px] border-solid border-l-gray-700 p-2 rounded-lg mt-4 mb-4" style="width: 120px;">
+
+			<div class="flex border-[1px] border-solid  border-l-gray-700 p-2 rounded-lg " style="width: 120px; height: 45px;">
 				<span class="btnRestQuantity cursor-pointer"><i class="fa fa-minus" aria-hidden="true"></i></span>
 				<?php
 
@@ -72,24 +86,12 @@ if ($product->is_in_stock()) : ?>
 
 			</div>
 
+
 			<!-- Few Stock -->
-			<div class="pt-4">
+			<div class="md:pt-4 w-[70%] md:w-auto">
 
-				<span class="text-sm text-red-600 font-semibold">
-					<?php
-					if ($product->managing_stock()) { // Si el producto está gestionando el stock
-						$stock_quantity = $product->get_stock_quantity(); // Obtén la cantidad de stock
 
-						if ($stock_quantity < 10 && $stock_quantity > 0) { // Si el stock es menor a 10
-							echo 'Only ' . $stock_quantity . ' items left in stock.';
-						}
-					} else {
-						echo 'Este producto no tiene stock gestionado.';
-					}
-					?>
-
-				</span>
-				<button type="submit" name="add-to-cart" value="<?php echo esc_attr($product->get_id()); ?>" class="mt-4 single_add_to_cart_button button alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?> w-full" style="border-radius: 7px"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+				<button type="submit" name="add-to-cart" value="<?php echo esc_attr($product->get_id()); ?>" class="md:mt-4 single_add_to_cart_button button alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?> w-full" style="border-radius: 7px"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
 			</div>
 
 		</div>

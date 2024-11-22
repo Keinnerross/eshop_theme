@@ -14,7 +14,7 @@ get_header('shop'); ?>
 
 <?php require_once get_stylesheet_directory() . '/components/productsParts/ratingComments.php'; ?>
 
-<div class="flex justify-center w-full py-2 font-medium text-sm boder-solid border-y-[1px] border-gray-300" style="margin-top: 128px;">
+<div class="flex justify-center w-full py-2 font-medium text-sm boder-solid border-y-[1px] border-gray-300 mt-[113px]">
 	<div class="w-[90vw]">
 		<?php
 		woocommerce_breadcrumb();
@@ -29,10 +29,10 @@ get_header('shop'); ?>
 
 		<div class="containerSticky md:flex gap-8">
 			<div class="w-full md:w-[72%]">
-			<?php wc_print_notices(); ?>
+				<?php wc_print_notices(); ?>
 
 				<div id="product-container">
-				<?php wc_print_notices(); ?>
+					<?php wc_print_notices(); ?>
 
 					<?php while (have_posts()) : the_post(); ?>
 						<section class="product-section md:flex w-full gap-10">
@@ -237,19 +237,15 @@ get_header('shop'); ?>
 
 
 	</main>
-	<div class="add-cart-mobile md:hidden fixed w-screen h-[50px] z-50 px-4 py-2 bg-white" style="bottom: 0">
-		<div class="flex flex-col items-center">
+	<div class="add-cart-mobile md:hidden fixed w-screen  bg-white z-50 px-2 py-4" style="bottom: 0">
+		<div class="flex flex-col items-center ">
 
 
-			<div class="justify-center flex flex-col items-center w-screen">
+			<div class="justify-center flex flex-col items-center w-screen ">
 
 				<?php if ($product->is_purchasable() && $product->is_in_stock()) : ?>
 					<?php woocommerce_template_single_add_to_cart(); ?>
 				<?php endif; ?>
-			</div>
-
-			<div>
-				<button id="addCartMobile" class="cursor-pointer w-full hidden">Add to cart</button>
 			</div>
 		</div>
 	</div>

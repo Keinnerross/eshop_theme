@@ -138,8 +138,8 @@ require_once get_stylesheet_directory() . "/components/header/modalCategoriesMob
 
                 <div class="flex gap-4 h-full">
 
-                    <div class="px-4 flex items-center justify-center h-full bg-slate-600 gap-2 cursor-pointer relative">
-                        <i id="categoriesBtnMobile" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                    <div class="px-4 flex items-center justify-center h-full  gap-2 cursor-pointer relative">
+                        <i id="categoriesBtnMobile" class="fa fa-bars fa-lg text-white" aria-hidden="true"></i>
 
                         <!-- Modal Categories -->
                         <?php modalCategoriesMobile(); ?>
@@ -147,7 +147,7 @@ require_once get_stylesheet_directory() . "/components/header/modalCategoriesMob
 
                 </div>
                 <div>
-                    <nav>
+                    <nav class="text-white">
                         <div class="flex gap-8 px-4">
                             <div class="flex items-center gap-2 cursor-pointer">
                                 <i class="fa fa-globe"></i>
