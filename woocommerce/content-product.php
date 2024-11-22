@@ -116,7 +116,7 @@ if ($image_id) {
 			<!-- Contenedor que solo se mostrará al hacer hover -->
 			<div class="absolute bottom-[10px]  right-1/2 translate-x-1/2 w-full flex justify-center md:opacity-0 md:group-hover:opacity-100 ">
 				<a href="<?php echo esc_url(get_permalink()); ?>" class="w-full px-2">
-					<div class="w-full bg-text text-white md:px-4  py-2 md:py-2 px-4 md:text-sm text-xs rounded-full text-center">
+					<div class="w-full bg-text text-white md:px-4  py-3 md:py-2 px-4 text-sm rounded-full text-center">
 						Ver Producto
 
 					</div>

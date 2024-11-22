@@ -18,7 +18,7 @@
 
 
     <div class="w-full flex flex-col items-center py-10">
-        <ul class="w-[80vw] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <ul class="w-[95vw] md:w-[80vw] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             <?php
 
             if ($loop->have_posts()) :

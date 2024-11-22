@@ -266,3 +266,13 @@ document.querySelectorAll('input[name="priceRange[]"]').forEach(function(checkbo
 
 
 
+/// notices controllers modal
+
+document.getElementById('success-modal').addEventListener('click', function() {
+    this.style.display = 'none'; // Cambia el estilo a 'none' para ocultar el elemento
+  });   
+
+  document.getElementById('closeSuccess').addEventListener('click', function() {
+    const modal = document.getElementById('success-modal');
+    modal.style.display = 'none';
+  });

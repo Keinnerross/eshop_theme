@@ -12,9 +12,10 @@ global $product;
 
 get_header('shop'); ?>
 
+<?php require_once get_stylesheet_directory() . '/components/woocomerce/relatedProducts.php' ?>
 <?php require_once get_stylesheet_directory() . '/components/productsParts/ratingComments.php'; ?>
 
-<div class="flex justify-center w-full py-2 font-medium text-sm boder-solid border-y-[1px] border-gray-300 mt-[113px]">
+<div class="flex justify-center w-full py-2 font-medium text-sm boder-solid border-y-[1px] border-gray-300 md:mt-[112px] mt-[60px]">
 	<div class="w-[90vw]">
 		<?php
 		woocommerce_breadcrumb();
@@ -165,7 +166,7 @@ get_header('shop'); ?>
 					?>
 				</div>
 
-				<div class="product-short-description py-4 min-h-[200px] !text-sm !font-medium pb-16 text-gray-500">
+				<div class="product-short-description py-4 md:min-h-[200px] !text-sm !font-medium md:pb-16 text-gray-500">
 					<h2 class="py-4 font-semibold">Product details</h2>
 					<p id="descriptionContainerProduct" class="text-justify w-full ">
 						<?php
@@ -179,16 +180,16 @@ get_header('shop'); ?>
 
 				</div>
 
-				<div id="related_products" class="w-full">
-					<?php
-					if (is_product()) :
-						woocommerce_related_products(array(
-							'posts_per_page' => 4, // Número de productos relacionados
-							'columns' => 4,        // Número de columnas para mostrar
-						));
-					endif;
-					?>
+				<div class="w-full">
+					<div class="w-full flex items-center justify-between gap-4 md:justify-start">
+						<h3>Related Products</h3>
+						<i class="fa fa-arrow-right text-lg" aria-hidden="true"></i>
+					</div>
+					<?php RelatedProducts() ?>
+
+
 				</div>
+
 
 				<!-- //Comments -->
 
@@ -237,7 +238,7 @@ get_header('shop'); ?>
 
 
 	</main>
-	<div class="add-cart-mobile md:hidden fixed w-screen  bg-white z-50 px-2 py-4" style="bottom: 0">
+	<div class="add-cart-mobile md:hidden fixed w-screen  bg-white z-50 px-2 py-4 shadow-md" style="bottom: 0">
 		<div class="flex flex-col items-center ">
 
 
