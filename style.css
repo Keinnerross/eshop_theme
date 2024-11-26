@@ -302,3 +302,14 @@ a:focus, input:focus, textarea:focus, button:focus {
 div:where(.swal2-container) .swal2-html-container{
   padding: 0 !important;
 }
+
+.dgwt-wcas-overlay-mobile {
+  padding: 25px 20px;
+}
+
+
+/* Estilos del sorting por defecto de woocomerce */
+
+.storefront-sorting {
+  margin-bottom: 0 !important;
+}

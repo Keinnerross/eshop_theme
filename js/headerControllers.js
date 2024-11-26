@@ -254,3 +254,29 @@ document.getElementById('success-modal').addEventListener('click', function() {
     const modal = document.getElementById('success-modal');
     modal.style.display = 'none';
   });
+
+
+
+
+
+  //////////order
+  document.querySelectorAll('input[name="order"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+        let currentUrl = new URL(window.location.href);
+
+        // Obtener el valor seleccionado en el radio button
+        let selectedOrder = this.value;
+
+        // Eliminar cualquier parámetro 'order' existente en la URL
+        currentUrl.searchParams.delete('order');
+
+        // Añadir el parámetro de orden a la URL
+        currentUrl.searchParams.append('order', selectedOrder);
+
+        // Cambiar la URL sin recargar la página
+        window.history.pushState(null, '', currentUrl);
+
+        // Recargar la página para aplicar el nuevo orden
+        window.location.reload();
+    });
+});

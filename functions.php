@@ -633,3 +633,61 @@ function redirigir_despues_registro($redirect_to) {
     return $redirect_to;
 }
 add_filter('woocommerce_registration_redirect', 'redirigir_despues_registro');
+
+
+
+////////Filtro order barra Moviles
+
+function custom_woocommerce_product_query( $query ) {
+    // Verificar si estamos en la tienda, categoría de producto o producto individual
+    if ( is_shop() || is_product_category() || is_product() ) {
+        if ( isset($_GET['order']) ) {
+            $order = $_GET['order'];
+
+            // Por defecto el orden será ASC si no se especifica
+            $order_type = 'ASC'; 
+
+            switch ($order) {
+                case 'popularity':
+                    $query->set( 'orderby', 'meta_value_num' );
+                    $query->set( 'meta_key', 'total_sales' ); // Ordenar por popularidad (ventas)
+                    break;
+                case 'rating':
+                    $query->set( 'orderby', 'meta_value_num' );
+                    $query->set( 'meta_key', '_wc_average_rating' ); // Ordenar por calificación promedio
+                    break;
+                case 'date':
+                    $query->set( 'orderby', 'date' ); // Ordenar por fecha
+                    $query->set( 'order', 'DESC' ); // Predeterminado a más recientes
+                    break;
+                case 'price':
+                    $query->set( 'orderby', 'meta_value_num' );
+                    $query->set( 'meta_key', '_price' ); // Ordenar por precio
+                    $query->set( 'order', 'ASC' ); // Ascendente por defecto
+                    break;
+                case 'price-desc':
+                    $query->set( 'orderby', 'meta_value_num' );
+                    $query->set( 'meta_key', '_price' ); // Ordenar por precio
+                    $query->set( 'order', 'DESC' ); // Descendente por defecto
+                    break;
+                default:
+                    // En caso de que no haya una opción válida o si no se ha seleccionado, usar el orden predeterminado
+                    $query->set( 'orderby', 'menu_order' ); // Orden predeterminado
+                    $query->set( 'order', 'ASC' ); // Ascendente
+                    break;
+            }
+
+            // Si se selecciona el orden 'price', se alternará entre ASC y DESC
+            if ($order == 'price' || $order == 'price-desc') {
+                // Comprobar si ya está en orden descendente o no, y alternar
+                if (isset($_GET['order']) && $_GET['order'] == 'price') {
+                    $order_type = 'ASC';
+                } elseif (isset($_GET['order']) && $_GET['order'] == 'price-desc') {
+                    $order_type = 'DESC';
+                }
+                $query->set( 'order', $order_type );
+            }
+        }
+    }
+}
+add_action( 'pre_get_posts', 'custom_woocommerce_product_query' );
