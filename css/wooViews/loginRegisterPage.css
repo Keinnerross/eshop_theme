@@ -25,7 +25,7 @@
     width: 50%;
     display: flex;
     justify-content: center;
-    background-color: var(--lightPrimary);
+    background-color: rgb(203 213 225);
     border-radius: 15px 0 0 15px;
     z-index: 9999;
     overflow-y: scroll;
@@ -41,7 +41,7 @@
 .logoLoginSection {
     width: 35px;
     height: 7px;
-    color: var(--primary);
+    color: rgb(37 99 235);
     display: flex;
     align-items: center;
     gap: 7px;
@@ -51,7 +51,7 @@
 }
 
 .titleLogin {
-    color: var(--secondary);
+    color: rgb(37 99 235);
     font-size: 50px !important;
     font-weight: bold;
 }
@@ -76,7 +76,7 @@
 
 .loginFormBtn,
 .registerFormBtn {
-    background-color: var(--primary) !important;
+    background-color: rgb(37 99 235) !important;
     color: white !important;
     margin-top: 15px;
     border-radius: 400px !important;
@@ -84,7 +84,7 @@
 }
 
 .lost_password {
-    color: var(--primary);
+    color: rgb(37 99 235);
     margin: 0;
 }
 
@@ -98,7 +98,7 @@
 .registerBtnText span,
 .loginBtnText span {
     font-weight: bold;
-    color: var(--primary);
+    color: rgb(37 99 235);
     cursor: pointer;
 }
 

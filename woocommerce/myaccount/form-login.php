@@ -32,7 +32,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 		<div class="loginRegisterSection">
 			<div class="loginRegisterCol">
 
-				<div class="loginContainer">
+				<div class="loginContainer animate-fade animate-duration-1000">
 					<div class="w-[200px]">
 
 						<?php
@@ -47,7 +47,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 					</div>
 					<span class="titleLogin text-primary">Login</span>
-					<span>Log in to your account to purchase at CSAIR SHOP
+					<span class="text-gray-800 pb-2 text-sm">Log in to your account to purchase at CSAIR SHOP
 
 					</span>
 
@@ -100,7 +100,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 				<!-- Formulario de registro -->
 				<!-- ////////////////// -->
 
-				<div class="registerContainer none">
+				<div class="registerContainer none animate-fade animate-duration-1000">
 					<div class="w-[200px]">
 
 						<?php
@@ -114,7 +114,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 						?>
 
 					</div>
-					<h3 style="font-weight: bold; color: var(--secondary);">Find the perfect detail in our online store.</h3>
+					<h3 style="font-weight: bold; color: rgb(37 99 235);">Find the perfect detail in our online store.</h3>
 
 
 
@@ -161,7 +161,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 						<?php else: ?>
 
-							<p>
+							<p class="text-sm py-2">
 								<?php esc_html_e('A link to set a new password will be sent to your email address.', 'woocommerce'); ?>
 							</p>
 
@@ -186,9 +186,11 @@ do_action('woocommerce_before_customer_login_form'); ?>
 					</p>
 				</div>
 
-
+				<a href="/" class="text-text cursor-pointer flex gap-2 items-center mt-4">
+					<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+					<p>Return to store</p>
+				</a>
 			</div>
-
 
 		</div>
 

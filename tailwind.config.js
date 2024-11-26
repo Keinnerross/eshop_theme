@@ -20,7 +20,9 @@ module.exports = {
           dark: "#B45309",     // Variación más oscura del color secundario
         },
         text: {
-          DEFAULT: "#1A1A1A",   // Negro suave, sin ser completamente puro
+          
+          DEFAULT: "#1b1b1c",   // Negro suave, sin ser completamente puro
+          old: "#1A1A1A",   // Negro suave, sin ser completamente puro
           light: "#595959",     // Gris oscuro para una opción más clara
           dark: "#595959", 
           lightX2: "#707070"     // Un tono de negro muy profundo, ideal para buen contraste

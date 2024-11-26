@@ -3,15 +3,15 @@
 ?>
 
     <div id="modalCategoriesMobile" class="fixed hidden top-0 left-0 w-screen h-screen z-[999] bg-black bg-opacity-50">
-        <div class="w-[70vw] h-screen bg-white border-t-4 border-blue-800">
+        <div class="w-[80vw] h-screen bg-[#f5f5fa] border-t-4 border-blue-800">
 
             <div id="closeBtnCategories" class="px-4 absolute top-10 right-4 bg-blue-600">
                 <span class="text-white">x<span>
             </div>
 
             <div class=" ">
-                <div class="border-b border-gray-300 px-4">
-                    <h4 class="text-[#262626] py-2 font-medium">Hi!</h4>
+                <div class="border-b border-gray-300 px-6">
+                    <h4 class="text-[#262626] py-4 font-medium">Hi!</h4>
                 </div>
                 <div>
                     <div class="modalMenuNavContainer">
@@ -68,10 +68,10 @@
 
                         // Verificar si hay categorías y mostrarlas
                         if (!empty($categories) && !is_wp_error($categories)) {
-                            echo '<ul class="product-categories flex flex-col ">';
+                            echo '<ul class="product-categories flex flex-col overflow-y-auto">';
                             foreach ($categories as $category) {
-                                echo '<li class="hover:bg-slate-800 py-2">';
-                                echo '<a class="flex gap-2 items-center" href="' . esc_url(get_term_link($category)) . '">';
+                                echo '<li class="hover:bg-slate-200 py-2 rounded-xl pr-2">';
+                                echo '<a class="flex gap-2 items-center justify-between text-gray-800 text-base" href="' . esc_url(get_term_link($category)) . '">';
                                 echo esc_html($category->name);
                                 echo '<i class="fa fa-caret-right" aria-hidden="true"></i>';
                                 echo '</a>';
