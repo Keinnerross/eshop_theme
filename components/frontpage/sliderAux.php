@@ -36,26 +36,14 @@
                         <div class="flex flex-col gap-2 justify-center items-center ">
                             <h2 class="md:text-4xl text-xs font-medium text-white">Pick Up In-Store</h2>
                             <p class="md:text-base text-xs text-white">Collect your order in-store or contact us for special arrangements. 
-                                
+
                             </p>
                         </div>
                     </div>
                 </div> <!-- close Item -->
-
-
-
-
-
-
-
             </div>
 
         </div>
     </div>
-
-
-
-
-
 <?php
 }
