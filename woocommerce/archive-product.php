@@ -4,8 +4,11 @@ get_header();
 
 <?php require_once get_stylesheet_directory() . '/components/sidebarShop/priceFilter.php'; ?>
 <?php require_once get_stylesheet_directory() . '/components/sidebarShop/categoriesBar.php'; ?>
+<?php require_once get_stylesheet_directory() . '/components/sidebarShop/sidebarShopMobile.php'; ?>
 
-<div id="primary" class="w-screen min-h-[100vh] flex justify-center md:mt-[128px] mt-[50px] " >
+
+
+<div id="primary" class="w-screen min-h-[100vh] flex justify-center md:mt-[128px] mt-[50px] ">
 
 	<main class=" w-[90vw] max-w-[1650px] flex pt-4">
 
@@ -49,33 +52,31 @@ get_header();
 
 		<div class="content-shop md:px-8 md:w-[72%] w-full">
 
-		
+
 			<?php
-			// Modificar la consulta de productos para aplicar filtros de precio
 			if (woocommerce_product_loop()) {
 
 			?>
 				<div class="hidden md:flex w-full justify-between">
 					<?php do_action('woocommerce_before_shop_loop'); ?>
 				</div>
-				<div class="filtersMobile w-full md:hidden flex justify-between py-4">
-					<div class="flex gap-2 items-center">
-						<i class="fa fa-filter" aria-hidden="true"></i>
+				<div x-data="{isOpen: false}">
+					<div class="filtersMobile w-full md:hidden flex justify-between py-4">
+						<div x-on:click="" class="shopSideMobileBtn flex gap-2 items-center">
+							<i class="fa fa-filter" aria-hidden="true"></i>
 
-						<p>Filter</p>
-					</div>
-					<div class="flex gap-2 items-center">
-						<i class="fa fa-search" aria-hidden="true"></i>
+							<p>Filter</p>
+						</div>
+						<div x-on:click="" class="shopSideMobileBtn flex gap-2 items-center">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<p>Search</p>
+						</div>
+						<div x-on:click="" class="shopSideMobileBtn flex gap-2 items-center">
+							<i class="fa fa-sort" aria-hidden="true"></i>
 
-
-						<p>Search</p>
-					</div>
-
-
-					<div class="flex gap-2 items-center">
-						<i class="fa fa-sort" aria-hidden="true"></i>
-
-						<p>Order</p>
+							<p>Order</p>
+						</div>
+						<?php sidebarShopMobile(); ?>
 					</div>
 				</div>
 

@@ -20,6 +20,13 @@ function cargar_slick_js() {
 }
 add_action('wp_enqueue_scripts', 'cargar_slick_js');
 
+function alpine_js() {
+    wp_enqueue_script( 'alpine-js', 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js', array(), null, true );
+}
+add_action( 'wp_enqueue_scripts', 'alpine_js' );
+
+
+
 //sweet alert
 function enqueue_sweetalert() {
     // Registrar SweetAlert2 desde un CDN
@@ -119,6 +126,7 @@ add_action('wp_enqueue_scripts', 'additionalStyles');
 function myScripts()
 {
     wp_register_script('headerControllers', get_stylesheet_directory_uri() . '/js/headerControllers.js', array(), null, true);
+    wp_register_script('shopControllers', get_stylesheet_directory_uri() . '/js/shopControllers.js', array(), null, true);
     wp_register_script('loginControllers', get_stylesheet_directory_uri() . '/js/loginControllers.js', array(), null, true);
     wp_register_script('slickjs', get_stylesheet_directory_uri() . '/js/slick.js', array(), null, true);
 
@@ -126,6 +134,7 @@ function myScripts()
     wp_enqueue_script('slickjs');
     wp_enqueue_script('headerControllers');
     wp_enqueue_script('loginControllers');
+    wp_enqueue_script('shopControllers');
 }
 
 add_action('wp_enqueue_scripts', 'myScripts');

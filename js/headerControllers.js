@@ -76,28 +76,6 @@ if (categoriesBtnMobile && modalCategoriesMobile && closeBtnCategories) {
 // ////////////////TEMPORAL Sidebar de precios
  
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Obtén el slider y los elementos de texto donde se mostrarán los valores
-//     const slider = document.getElementById('price-slider');
-//     const minPriceDisplay = document.getElementById('min-price');
-//     const maxPriceDisplay = document.getElementById('max-price');
-//     const minPriceInput = document.getElementById('min_price');
-//     const maxPriceInput = document.getElementById('max_price');
-
-//     // Configura el valor inicial
-//     minPriceDisplay.textContent = slider.min;
-//     maxPriceDisplay.textContent = slider.value;
-
-//     // Función que se ejecuta cuando el slider cambia
-//     slider.addEventListener('input', function () {
-//         // Actualiza el valor mostrado y el campo oculto
-//         minPriceDisplay.textContent = slider.min;
-//         maxPriceDisplay.textContent = slider.value;
-
-//         minPriceInput.value = slider.min;
-//         maxPriceInput.value = slider.value;
-//     });
-// });
 
 
 

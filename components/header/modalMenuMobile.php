@@ -1,4 +1,4 @@
-<?php function modalCategoriesMobile()
+<?php function ModalMenuMobile()
 {
 ?>
 

@@ -8,6 +8,16 @@ function BannerMain()
     $hight = "80vh";
     $socialBtn = "w-7 h-7 text-xs bg-blue-800 rounded-full flex items-center justify-center text-white hover:text-white cursor-pointer ";
 
+
+    //Social Media
+
+    $instagram = "https://www.instagram.com/csair_riverdale";
+
+    $facebook = "https://www.facebook.com/CSAIRiverdale?mibextid=LQQJ4d&rdid=saZU4UVRDVu6fqWf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19fV6yHVE2%2F%3Fmibextid%3DLQQJ4d";
+
+    $youtube = "https://www.youtube.com/@conservativesynagogueadath4886?si=n0lvxGggz9XqC_7z";
+
+
 ?>
 
 
@@ -34,9 +44,9 @@ function BannerMain()
                 <div class="relative h-[30%] flex gap-4">
                     <div class="md:absolute bottom-0 flex md:flex-row flex-col items-center gap-4 text-center md:text-left">
                         <div class="flex gap-4 ">
-                            <a hre="#" class="<?php echo $socialBtn ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a hre="#" class="<?php echo $socialBtn ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a hre="#" class="<?php echo $socialBtn ?>"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="<?php echo $instagram ?>" target="_blank" class="<?php echo $socialBtn ?>"><i class="fa fa-instagram text-white" aria-hidden="true"></i></a>
+                            <a href="<?php echo $facebook ?>" target="_blank" class="<?php echo $socialBtn ?>"><i class="fa fa-facebook text-white" aria-hidden="true"></i></a>
+                            <a href="<?php echo $youtube ?>" target="_blank" class="<?php echo $socialBtn ?>"><i class="fa fa-youtube-play text-white" aria-hidden="true"></i></a>
                         </div>
                         <p class="text-primary font-medium">Follow events and updates on our social networks</p>
                     </div>

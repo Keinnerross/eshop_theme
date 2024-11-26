@@ -9,7 +9,7 @@
  */
 require_once get_stylesheet_directory() . "/components/header/modalUserMenu.php";
 require_once get_stylesheet_directory() . "/components/header/modalCategories.php";
-require_once get_stylesheet_directory() . "/components/header/modalCategoriesMobile.php";
+require_once get_stylesheet_directory() . "/components/header/ModalMenuMobile.php";
 
 
 
@@ -144,7 +144,7 @@ $logoMobileWhite = get_stylesheet_directory_uri() . "/assets/logo_mobile.png";
                         <i id="categoriesBtnMobile" class="fa fa-bars fa-lg text-white" aria-hidden="true"></i>
 
                         <!-- Modal Categories -->
-                        <?php modalCategoriesMobile(); ?>
+                        <?php ModalMenuMobile(); ?>
                        <a href="/"> <div class="w-[100px] py-2  h-[70%]">
                             <img src="<?php echo $logoMobileWhite ?>" class="object-contain"> </img>
                         </div></a>
