@@ -60,24 +60,32 @@ get_header();
 				<div class="hidden md:flex w-full justify-between">
 					<?php do_action('woocommerce_before_shop_loop'); ?>
 				</div>
-				<div x-data="{isOpen: false}">
+				<div x-data="{
+				isOpen: false, 
+				isFilter: false, 
+				isSearch: false, 
+				isOrder: false}">
 					<div class="filtersMobile w-full md:hidden flex justify-between py-4">
-						<div x-on:click="" class="shopSideMobileBtn flex gap-2 items-center">
+						<div x-on:click="isOpen= !isOpen" class="shopSideMobileBtn flex gap-2 items-center">
 							<i class="fa fa-filter" aria-hidden="true"></i>
 
 							<p>Filter</p>
 						</div>
-						<div x-on:click="" class="shopSideMobileBtn flex gap-2 items-center">
+						<div x-on:click="isOpen= !isOpen" class="shopSideMobileBtn flex gap-2 items-center">
 							<i class="fa fa-search" aria-hidden="true"></i>
 							<p>Search</p>
 						</div>
-						<div x-on:click="" class="shopSideMobileBtn flex gap-2 items-center">
+						<div x-on:click="isOpen= !isOpen" class="shopSideMobileBtn flex gap-2 items-center">
 							<i class="fa fa-sort" aria-hidden="true"></i>
 
 							<p>Order</p>
 						</div>
-						<?php sidebarShopMobile(); ?>
 					</div>
+
+
+					<?php sidebarShopMobile(); ?>
+
+
 				</div>
 
 
